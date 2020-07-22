@@ -1,0 +1,217 @@
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul class="list1">    
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#orçamento">Entrar em contato</a></li>
+                <li><a target="_blank" href="https://whats.link/fisiopelvicahelaine">Marcar consulta</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        <img class="logo" src="img/MARCA D'AGUA.png" alt="Fisioterapeuta Helaine">
+        </div>
+    </header>
+    <main>
+        {{#if errormsg}}
+            <div id="orçamento" class="error">{{errormsg}}</div>
+        {{/if}}
+        <div class="block1">
+                <h1 class="txt1">
+                    <span>
+                        Helaine Souza - Fisioterapia Pélvica
+                    </span>
+                </h1><br>
+                <p class="txt1p">
+                    Fisioterapeuta Pélvica - Vila da Penha e Centro   
+                </p><br>
+                <a  target="_blank" href="https://whats.link/fisiopelvicahelaine"><button class="btn1">Marcar consulta</button></a>
+        </div>
+
+        <hr class="hrstyle1"> 
+
+        <div class="txtmain"><h1>Serviços</h1></div>
+        <div class="servicos">
+            <h1>Tratamentos para:</h1><br><br>
+            <ul>
+                <li>Incontinência urinária</li>
+                <li>Bexiga hiperativa</li>
+                <li>Prolapso genital</li>
+                <li>Dispareunia</li><br><br><br><br><br>
+                <li>Vaginismo</li>
+                <li>vulvodinia</li>
+                <li>Incontinência fecal</li>
+                <li>Constipação</li><br><br><br><br><br>
+                <li>Anismo</li>
+                <li>Fissuras anais,vaginas e mamárias</li>
+                <li>Candidiase de repetição</li>
+            </ul>
+        </div>
+
+        <hr class="hrstyle1">
+
+        <div id="sobremim" class="txtmain">
+            <h1>Sobre mim</h1>
+        </div>
+        <div class="sobremim">
+            <p><span>Me chamo Helaine Souza,sou Fisioterapeuta Pélvica Graduada em Fisioterapia pela UGF desde 2003. 
+                    Me especializei em Fisioterapia Uroginecológica pela Interfisio.
+                    Atuo na área de saúde do homem e da mulher desde 2014 com consultórios na Vila da Penha e Centro do RJ.</span></p>
+        </div>
+
+        <hr class="hrstyle1"> 
+
+        <div id="galeria" class="txtmain"><h1>Galeria</h1></div>
+        <div  class="galeria">
+            <div class="item"><img src="img/galeria1.jpg" alt="Dra. Helaine Souza - Fisioterapeuta Pélvica"></div>
+            <div class="item"><img src="img/galeria2.jpg" alt="Dra. Helaine Souza - Fisioterapeuta Pélvica"></div>
+            <div class="item"><img src="img/galeria3.jpg" alt="Dra. Helaine Souza - Fisioterapeuta Pélvica"></div>
+            <div class="item"><img src="img/galeria4.jpg" alt="Dra. Helaine Souza - Fisioterapeuta Pélvica"></div>
+        </div>
+        <div class="arrows">
+            <div id="prev-arrow"><img src="img/back (2).png" alt=""></div>
+            <div id="next-arrow"><img src="img/next (3).png" alt=""></div>
+        </div>
+
+        <hr class="hrstyle1"> 
+
+        <div class="txtmain">
+            <h1>Comentários</h1>
+        </div>
+        <div class="comentarios">
+            <div>
+                <h1>Denise Souza </h1>
+                <p>Ótima fisioterapeuta! Super atenciosa. Explica tudo de uma maneira clara e objetiva. Super Recomendo.</p>
+            </div>
+            <div>
+                <h1>Ricardo Santos Alexandre</h1>
+                <p>Excelente profissional! Altamente gabaritada, atenciosa, super gentil... Indico seus serviços à quem precisar.</p>
+            </div>
+            <div>
+                <h1>Sérgio Rocha de Aguiar</h1>
+                <p>Uma ótima profissional muito prestativa e totalmente comprometida na recuperação do paciente
+                     me atendeu super bem prestando muito atenção no meu problema
+                      e pronta a me ajudar na minha recuperação.</p>
+            </div>
+            <div>
+                <h1>Evanise</h1>
+                <p>Excelente profissional!
+                    Muito preocupada em entender o nosso caso, e em buscar o tratamento adequado.
+                    Está sempre se atualizando para fazer o melhor pelos pacientes.</p>
+            </div>
+        </div>
+        <div class="arrows">
+            <div id="arrow-prev"><img src="img/back (2).png" alt=""></div>
+            <div id="arrow-next"><img src="img/next (3).png" alt=""></div>
+        </div>
+
+        <hr class="hrstyle1"> 
+
+        {{#if success_msg}}
+            <div id="orçamento" class="success">{{success_msg}}</div>
+        {{/if}}
+
+        {{#if error_msg}}
+            <div id="orçamento" class="error">{{error_msg}}</div>
+        {{/if}}
+    
+        <div  class="txtmain">
+            <h1>Entrar em contato</h1>
+        </div>
+        <div class="formulario">
+            <form  action="/" method="post">
+                <li>
+                    <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" value="{{nome}}">
+                </li>
+                
+                <li>
+                    <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email" value="{{email}}">
+                </li>
+                
+                <li>
+                    <label for="numero">Número para contato:</label>
+                        <input  type="number" name="numero" id="numero" value="{{numero}}">
+                </li>
+                <button type="submit" class="btn2">Entrar em contato</button>
+            </form>
+        </div> 
+        
+        <hr class="hrstyle1"> 
+
+        <div class="txtmain">
+            <h1>Planos de saúde</h1>
+        </div>
+        <div class="planos">
+            <ul>
+                <li><img src="img/planos/plano1.png" alt=""></li>
+                <li><img src="img/planos/plano2.png" alt=""></li>
+                <li><img src="img/planos/plano3.png" alt=""></li>
+                <li><img src="img/planos/plano4.jpg" alt=""></li>
+                <li><img src="img/planos/plano5.png" alt=""></li><br><br>
+                <li><img src="img/planos/plano6.jpg" alt=""></li>
+                <li><img src="img/planos/plano7.png" alt=""></li>
+                <li><img src="img/planos/plano8.png" alt=""></li>
+                <li><img src="img/planos/plano9.png" alt=""></li>
+                <li><img src="img/planos/plano10.png" alt=""></li><br><br>
+                <li><img src="img/planos/plano11.png" alt=""></li>
+                <li><img src="img/planos/plano12.png" alt=""></li>
+                <li><img src="img/planos/plano13.jpg" alt=""></li>
+                <li><img src="img/planos/plano14.png" alt=""></li>
+                <li><img src="img/planos/plano15.jpg" alt=""></li>
+            </ul>
+        </div>
+
+        <hr class="hrstyle1"> 
+
+        <div class="txtmain">
+            <h1>Contatos</h1>
+        </div>
+        <div id="contato" class="contatos">
+            <div class="tel">
+                <h2>Telefone</h2>
+                <p>(21) 97221-7676</p>
+            </div>
+            <div class="endereco">
+                <h2>Endereços</h2>
+                <h4>Vila da Penha</h4>
+                <p>Techfisio Fisioterapia</p>
+                <p>Avenida Meriti 2445,sala 208</p>
+                <p>Segunda a Quinta de 07H as 18H</p><br>
+                <h4>Centro</h4>
+                <p>Gastrocentro</p>
+                <p>Rua Uruguaiana 10,sala 1307</p>
+                <p>Sexta feira 14H as 18H</p>
+
+
+            </div>
+            <div class="agenda">
+                <h2>Agenda</h2>
+                <p>Seg: 07:00 - 18:00 - Vila da Penha</p>
+                <p>Ter: 07:00 - 18:00 - Vila da Penha</p>
+                <p>Qua: 07:00 - 18:00 - Vila da Penha</p>
+                <p>Qui: 07:00 - 18:00 - Vila da Penha</p>
+                <p>Sex Manhã: 07:00 - 12:00 - Vila da Penha</p>
+                <p>Sex Tarde: 14:00 - 18:00 - Centro</p>
+                <p>Sáb: Fechado</p>
+                <p>Dom: Fechado</p>
+            </div>
+        </div>
+
+        <hr class="hrstyle2"> 
+
+    </main>
+
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/index.js"></script>
+</body>
