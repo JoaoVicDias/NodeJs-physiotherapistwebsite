@@ -262,13 +262,13 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 19px;
     padding-top: 30px;
 }
-
 @media (max-width:375px){
 body{
     max-width: 375px;
 }
 .menu{
     height: 100px;
+    width: 116%;
 }
 .menu ul {
     margin-left: 30px;
@@ -282,8 +282,7 @@ body{
     font-size: 14px;
 }
 .menu a:hover{
-    color: rgb(240, 215, 215);
-    cursor: pointer;
+    color: none;
 }
 .logo{
     height: 70px;
@@ -394,13 +393,13 @@ body{
         font-size: 14px;
     }
     .menu a:hover{
-        color: rgb(240, 215, 215);
-        cursor: pointer;
+        color: none;
     }
     .logo{
-        height: 70px;
+        height: 65px;
         width: 120px;
         margin-left: -60px;
+        margin-bottom: 120px;
     }
     .txt1 span{
         font-size: 40px;
@@ -435,13 +434,13 @@ body{
         margin-left: -14%;
     }
     .servicos ul li{
-        margin-left: 20px;
-        font-size: 16px;
+        margin-left: 15px;
+        font-size: 15px;
     }
     .sobremim p{
         width: 365px;
         font-size: 15px;
-        margin-left: 3px;
+        margin-left: 27px;
     }
     .comentarios{
         width: 75%;
@@ -487,7 +486,235 @@ body{
         width: 140px;
     }
     }
-    
+    @media (max-width:360px){
+        body{
+            max-width: 360px;
+        }
+        .menu{
+            height: 80px;
+            width: 102%;
+        }
+        .menu ul {
+            margin-left: 25px;
+            padding-top: 20px;
+            width: 100%;
+        }
+        .menu ul li{
+            margin-left: 8px;
+        }
+        .menu a{
+            font-size: 14px;
+        }
+        .menu a:hover{
+            color: none;
+        }
+        .logo{
+            height: 67px;
+            width: 120px;
+            margin-left: -63px;
+            padding-bottom: 40px;
+        }
+        .txt1 span{
+            font-size: 40px;
+        }
+        .txt1p{
+            font-size: 17px;
+        }
+        .btn1{
+            height: 50px;
+            width: 190px;
+            font-size: 18px;
+        }
+        .galeria{
+         width: 75%;
+         margin-left: 13%;
+        }
+        .galeria img{
+            height: 500px;
+            width: 100%;
+        }
+        .arrows{
+            margin-left: 10%;
+            margin-top: 13px;
+        }
+        .arrows div{
+            margin-right: 30px;
+        }
+        .servicos h1{
+            font-size: 19px; 
+        }
+        .servicos ul{
+            margin-left: -14%;
+        }
+        .servicos ul li{
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .sobremim p{
+            width: 365px;
+            font-size: 15px;
+            margin-left: 3px;
+        }
+        .comentarios{
+            width: 75%;
+            margin-left: 14%;
+        }
+        .comentarios p{
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .formulario input{
+            width: 200px;
+        }
+        #numero{
+            width: 100px;
+        }
+        .planos ul{
+            width: 300px;
+        }
+        .planos li{
+            margin-left: 0;
+        }
+        .planos img {
+            widows: 49px; ;
+            height: 49px;
+        }
+        .contatos h2{
+            font-size: 19px;
+        }
+        .contatos p{
+            font-size: 15px;
+        }
+        .tel{
+            margin-left: 40px;
+            margin-top: 100px;
+        }
+        .endereco{
+            margin-top: -70px;
+            margin-left: 190px;
+        }
+        .agenda{
+            margin-top: -270px;
+            margin-left: 40px;
+            width: 140px;
+        }
+        }
+        @media (max-width:320px){
+            body{
+                max-width: 320px;
+            }
+            .menu{
+                height: 70px;
+                width: 116%;
+            }
+            .menu ul {
+                margin-left: 20px;
+                padding-top: 15px;
+                width: 100%;
+            }
+            .menu ul li{
+                margin-left: 5px;
+            }
+            .menu a{
+                font-size: 13px;
+            }
+            .menu a:hover{
+                color: none;
+            }
+            .logo{
+                height: 60px;
+                width: 110px;
+                margin-left: -60px;
+            }
+            .block1{
+                margin-left: 40px;
+            }
+            .txt1 span{
+                font-size: 33px
+            }
+            .txt1p{
+                font-size: 17px;
+            }
+            .btn1{
+                height: 50px;
+                width: 190px;
+                font-size: 18px;
+            }
+            .galeria{
+             width: 80%;
+             margin-left: 14%;
+            }
+            .galeria img{
+                height: 500px;
+                width: 100%;
+            }
+            .arrows{
+                margin-left: 10%;
+                margin-top: 13px;
+            }
+            .arrows div{
+                margin-right: 30px;
+            }
+            .servicos h1{
+                font-size: 19px; 
+            }
+            .servicos ul{
+                margin-left: -14%;
+            }
+            .servicos ul li{
+                margin-left: 20px;
+                font-size: 16px;
+            }
+            .sobremim p{
+                width: 365px;
+                font-size: 15px;
+                margin-left: 3px;
+            }
+            .comentarios{
+                width: 75%;
+                margin-left: 18%;
+            }
+            .comentarios p{
+                font-size: 18px;
+                margin-top: 30px;
+            }
+            .formulario input{
+                width: 200px;
+            }
+            #numero{
+                width: 100px;
+            }
+            .planos ul{
+                width: 300px;
+                margin-left: -5px;
+            }
+            .planos li{
+                margin-left: 0;
+            }
+            .planos img {
+                widows: 49px; ;
+                height: 49px;
+            }
+            .contatos h2{
+                font-size: 19px;
+            }
+            .contatos p{
+                font-size: 15px;
+            }
+            .tel{
+                margin-left: 40px;
+                margin-top: 100px;
+            }
+            .endereco{
+                margin-top: -70px;
+                margin-left: 220px;
+            }
+            .agenda{
+                margin-top: -270px;
+                margin-left: 40px;
+                width: 140px;
+            }
+            }
 
 
     
