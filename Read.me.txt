@@ -1,0 +1,31 @@
+In this project i wanted to make a physiotherapist website to training and show my skills using NodeJs with MVC pattern.
+
+
+
+The languages i used are:
+-Html
+-Css
+-JavaScript
+
+The framework and library are:
+
+--Framework:
+-NodeJS
+
+--Librarys:
+-Express
+-Body-parser
+-Compression
+-nodemon
+-Mongoose
+-Connect-flash
+-Express-Handlebars
+-Express-Session
+-
+
+The Database is:
+-MongoDB
+
+
+This site is working.
+Thank for watch.
